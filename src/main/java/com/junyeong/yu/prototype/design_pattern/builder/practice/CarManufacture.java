@@ -1,17 +1,24 @@
 package com.junyeong.yu.prototype.design_pattern.builder.practice;
 
-public class CarManufacture {
-    private CarBuilder carBuilder;
+import com.junyeong.yu.prototype.design_pattern.builder.practice.builder.CarBuilderA;
+import com.junyeong.yu.prototype.design_pattern.builder.practice.models.CarA;
 
-    public void setCarBuilder(CarBuilder carBuilder) {
+public class CarManufacture {
+    private CarBuilderA carBuilder;
+
+    public void setCarClass(Class<? extends CarA> carClass) {
+        carBuilder.setCarBrand(carClass);
+    }
+
+    public void setCarBuilder(CarBuilderA carBuilder) {
         this.carBuilder = carBuilder;
     }
 
-    public Car build() {
+    public CarA getCar() {
         return carBuilder.getCar();
     }
 
-    public CarManufacture constructCar() {
+    public CarManufacture buildCar() {
         carBuilder = carBuilder.createCar()
                 .addBody()
                 .addEngine()

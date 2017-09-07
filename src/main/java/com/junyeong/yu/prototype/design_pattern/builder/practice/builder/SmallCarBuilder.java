@@ -1,26 +1,26 @@
-package com.junyeong.yu.prototype.design_pattern.builder.practice;
+package com.junyeong.yu.prototype.design_pattern.builder.practice.builder;
 
-public class SmallCarBuilder extends CarBuilder {
+public class SmallCarBuilder extends CarBuilderA {
     @Override
-    public CarBuilder addBody() {
+    public CarBuilderA addBody() {
         car.setBody("Small Body");
         return this;
     }
 
     @Override
-    public CarBuilder addEngine() {
+    public CarBuilderA addEngine() {
         car.setEngine("Small Engine");
         return this;
     }
 
     @Override
-    public CarBuilder addDoors() {
+    public CarBuilderA addDoors() {
         car.setDoors("Small Doors");
         return this;
     }
 
     @Override
-    public CarBuilder addWheels() {
+    public CarBuilderA addWheels() {
         car.setWheels("Small Wheels");
         return this;
     }

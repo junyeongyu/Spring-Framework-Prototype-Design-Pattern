@@ -1,10 +1,17 @@
-package com.junyeong.yu.prototype.design_pattern.builder.practice;
+package com.junyeong.yu.prototype.design_pattern.builder.practice.models;
 
-public class Car {
+abstract public class CarA {
+    private String brand;
     private String body;
     private String engine;
     private String doors;
     private String wheels;
+
+    public CarA() {
+        this.brand = getBrand();
+    }
+
+    abstract public String getBrand();
 
     public String getBody() {
         return body;
@@ -36,5 +43,16 @@ public class Car {
 
     public void setWheels(String wheels) {
         this.wheels = wheels;
+    }
+
+    @Override
+    public String toString() {
+        return "CarA{" +
+                "brand='" + brand + '\'' +
+                ", body='" + body + '\'' +
+                ", engine='" + engine + '\'' +
+                ", doors='" + doors + '\'' +
+                ", wheels='" + wheels + '\'' +
+                '}';
     }
 }

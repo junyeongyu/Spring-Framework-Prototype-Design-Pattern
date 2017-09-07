@@ -1,6 +1,6 @@
 package com.junyeong.yu.prototype.design_pattern.builder;
 
-public class MainBuilder {
+public class MainPizza {
     public static void main(String[] args) {
         Waiter waiter = new Waiter();
         PizzaBuilder hawaiianPizzabuilder = new HawaiianPizzaBuilder();

@@ -1,27 +1,29 @@
 package com.junyeong.yu.prototype.design_pattern.builder.practice.builders;
 
+import com.junyeong.yu.prototype.design_pattern.builder.practice.structs.CarS;
+
 public class BigCarBuilder extends CarBuilderA {
     @Override
     public CarBuilderA addBody() {
-        car.setBody("Big Body");
+        car.setBody(CarS.MESSAGE_BIG_BODY);
         return this;
     }
 
     @Override
     public CarBuilderA addEngine() {
-        car.setEngine("Big Engine");
+        car.setEngine(CarS.MESSAGE_BIG_ENGINE);
         return this;
     }
 
     @Override
     public CarBuilderA addDoors() {
-        car.setDoors("Big Doors");
+        car.setDoors(CarS.MESSAGE_BIG_DOORS);
         return this;
     }
 
     @Override
     public CarBuilderA addWheels() {
-        car.setWheels("Big Wheels");
+        car.setWheels(CarS.MESSAGE_BIG_WHEELS);
         return this;
     }
 }

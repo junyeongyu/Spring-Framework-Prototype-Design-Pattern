@@ -36,8 +36,8 @@ public class CarFactory {
 
     public synchronized CarA createBigCarBmw() {
         // 2.2 Big Bmw Car
-        carManufacture.setCarClass(CarBmw.class);
         carManufacture.setCarBuilder(bigCarBuilder);
+        carManufacture.setCarClass(CarBmw.class);
         return getCar();
     }
 

@@ -7,7 +7,7 @@ abstract public class CarBuilderA {
     protected CarA car;
     private Class<? extends CarA> carClass;
 
-    public void setCarBrand(Class<? extends CarA> carClass) {
+    public void setCarClass(Class<? extends CarA> carClass) {
         this.carClass = carClass;
     }
     public CarA getCar() {

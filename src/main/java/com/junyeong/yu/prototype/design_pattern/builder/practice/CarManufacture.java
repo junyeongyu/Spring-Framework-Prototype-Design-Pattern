@@ -7,7 +7,7 @@ public class CarManufacture {
     private CarBuilderA carBuilder;
 
     public void setCarClass(Class<? extends CarA> carClass) {
-        carBuilder.setCarBrand(carClass);
+        carBuilder.setCarClass(carClass);
     }
 
     public void setCarBuilder(CarBuilderA carBuilder) {

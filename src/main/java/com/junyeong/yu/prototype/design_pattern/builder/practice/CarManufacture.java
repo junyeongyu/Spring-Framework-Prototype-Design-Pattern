@@ -1,6 +1,6 @@
 package com.junyeong.yu.prototype.design_pattern.builder.practice;
 
-import com.junyeong.yu.prototype.design_pattern.builder.practice.builder.CarBuilderA;
+import com.junyeong.yu.prototype.design_pattern.builder.practice.builders.CarBuilderA;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.models.CarA;
 
 public class CarManufacture {

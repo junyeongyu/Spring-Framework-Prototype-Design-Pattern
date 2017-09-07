@@ -1,9 +1,9 @@
 package com.junyeong.yu.prototype.design_pattern.builder.practice.factory;
 
 import com.junyeong.yu.prototype.design_pattern.builder.practice.CarManufacture;
-import com.junyeong.yu.prototype.design_pattern.builder.practice.builder.BigCarBuilder;
-import com.junyeong.yu.prototype.design_pattern.builder.practice.builder.CarBuilderA;
-import com.junyeong.yu.prototype.design_pattern.builder.practice.builder.SmallCarBuilder;
+import com.junyeong.yu.prototype.design_pattern.builder.practice.builders.BigCarBuilder;
+import com.junyeong.yu.prototype.design_pattern.builder.practice.builders.CarBuilderA;
+import com.junyeong.yu.prototype.design_pattern.builder.practice.builders.SmallCarBuilder;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.models.CarA;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.models.CarBmw;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.models.CarToyota;

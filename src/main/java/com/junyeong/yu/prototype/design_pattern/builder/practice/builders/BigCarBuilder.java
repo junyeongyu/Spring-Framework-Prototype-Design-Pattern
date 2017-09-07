@@ -1,4 +1,4 @@
-package com.junyeong.yu.prototype.design_pattern.builder.practice.builder;
+package com.junyeong.yu.prototype.design_pattern.builder.practice.builders;
 
 public class BigCarBuilder extends CarBuilderA {
     @Override

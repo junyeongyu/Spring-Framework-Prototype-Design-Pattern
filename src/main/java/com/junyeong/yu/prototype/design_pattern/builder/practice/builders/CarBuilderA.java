@@ -1,4 +1,4 @@
-package com.junyeong.yu.prototype.design_pattern.builder.practice.builder;
+package com.junyeong.yu.prototype.design_pattern.builder.practice.builders;
 
 import com.junyeong.yu.prototype.design_pattern.builder.practice.models.CarA;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.structs.CarS;

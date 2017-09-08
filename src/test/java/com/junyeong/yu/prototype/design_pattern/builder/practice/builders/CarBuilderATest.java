@@ -1,5 +1,6 @@
 package com.junyeong.yu.prototype.design_pattern.builder.practice.builders;
 
+import com.junyeong.yu.prototype.design_pattern.builder.practice.CarMakerToyota;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.models.CarToyota;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.structs.CarS;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.stubs.CarBuilderStub;
@@ -17,13 +18,12 @@ public class CarBuilderATest {
 
     @Before
     public void setUp() throws Exception {
-        carBuilder = new CarBuilderStub();
-        carBuilder.setCarClass(CarToyota.class);
+        carBuilder = new CarBuilderStub(new CarMakerToyota());
     }
 
     @Test
     public void setCarBrand() throws Exception {
-        carBuilder.setCarClass(CarToyota.class);
+        carBuilder.setCarMaker(new CarMakerToyota());
         assertThat(carBuilder.createCar().getCar().getBrand(), is(CarS.TOYOTA_BRAND));
     }
 

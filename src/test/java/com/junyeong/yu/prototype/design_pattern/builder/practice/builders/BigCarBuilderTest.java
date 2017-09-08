@@ -1,5 +1,6 @@
 package com.junyeong.yu.prototype.design_pattern.builder.practice.builders;
 
+import com.junyeong.yu.prototype.design_pattern.builder.practice.CarMakerToyota;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.models.CarToyota;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.structs.CarS;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.stubs.BigCarBuilderStub;
@@ -15,8 +16,7 @@ public class BigCarBuilderTest {
 
     @Before
     public void setUp() throws Exception {
-        carBuilder = new BigCarBuilderStub();
-        carBuilder.setCarClass(CarToyota.class);
+        carBuilder = new BigCarBuilderStub(new CarMakerToyota());
         carBuilder.createCar();
     }
 

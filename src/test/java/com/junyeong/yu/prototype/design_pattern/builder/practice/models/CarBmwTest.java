@@ -1,6 +1,5 @@
 package com.junyeong.yu.prototype.design_pattern.builder.practice.models;
 
-import com.junyeong.yu.prototype.design_pattern.builder.practice.factory.CarFactory;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.structs.CarS;
 import org.junit.Before;
 import org.junit.Test;

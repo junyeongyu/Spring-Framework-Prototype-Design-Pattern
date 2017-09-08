@@ -6,10 +6,6 @@ import com.junyeong.yu.prototype.design_pattern.builder.practice.models.CarA;
 public class CarManufacture {
     private CarBuilderA carBuilder;
 
-    public void setCarClass(Class<? extends CarA> carClass) {
-        carBuilder.setCarClass(carClass);
-    }
-
     public void setCarBuilder(CarBuilderA carBuilder) {
         this.carBuilder = carBuilder;
     }

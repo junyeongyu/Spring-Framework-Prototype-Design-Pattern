@@ -1,8 +1,14 @@
 package com.junyeong.yu.prototype.design_pattern.builder.practice.builders;
 
+import com.junyeong.yu.prototype.design_pattern.builder.practice.CarMakerI;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.structs.CarS;
 
 public class SmallCarBuilder extends CarBuilderA {
+
+    public SmallCarBuilder(CarMakerI carMaker) {
+        super(carMaker);
+    }
+
     @Override
     public CarBuilderA addBody() {
         car.setBody(CarS.MESSAGE_SMALL_BODY);

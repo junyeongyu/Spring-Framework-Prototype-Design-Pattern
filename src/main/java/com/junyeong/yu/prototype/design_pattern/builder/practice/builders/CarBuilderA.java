@@ -1,15 +1,22 @@
 package com.junyeong.yu.prototype.design_pattern.builder.practice.builders;
 
+import com.junyeong.yu.prototype.design_pattern.builder.practice.CarMakerI;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.models.CarA;
 import com.junyeong.yu.prototype.design_pattern.builder.practice.structs.CarS;
 
 abstract public class CarBuilderA {
     protected CarA car;
-    private Class<? extends CarA> carClass;
 
-    public void setCarClass(Class<? extends CarA> carClass) {
-        this.carClass = carClass;
+    private CarMakerI carMaker;
+
+    public CarBuilderA (CarMakerI carMaker) {
+        this.setCarMaker(carMaker);
     }
+
+    public void setCarMaker(CarMakerI carMaker) {
+        this.carMaker = carMaker;
+    }
+
     public CarA getCar() {
         if (car == null) {
             throw new RuntimeException(CarS.MESSAGE_CAR_NULL_ERROR);
@@ -18,14 +25,8 @@ abstract public class CarBuilderA {
     }
 
     public CarBuilderA createCar() {
-        try {
-            this.car = carClass.newInstance(); // make instance using child class.
-            return this;
-        } catch (InstantiationException e) {
-            throw new RuntimeException(e);
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        }
+        car = carMaker.createCar();
+        return this;
     }
 
     public abstract CarBuilderA addBody();
